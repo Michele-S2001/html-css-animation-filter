@@ -70,3 +70,14 @@
     border-radius: 20px;
     filter: blur(2px) grayscale(40%);
 }
+
+/* ESERCIZIO 9 */
+.ex-9-img {
+    transition: all 1.5s;
+}
+
+.ex-9-img:hover {
+    transform: scale(1.5);
+    border-radius: 20px;
+    filter: hue-rotate(90deg) opacity(0.2);
+}
