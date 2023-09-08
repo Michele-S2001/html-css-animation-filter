@@ -99,3 +99,24 @@
         transform: rotate(-360deg);
     }
 }
+
+/* ESERCIZIO 11 */
+.ex-11-icon:hover {
+    animation-name: half-spin;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.65,.55,1,.34);
+}
+
+@keyframes half-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
