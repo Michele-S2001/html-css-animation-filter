@@ -120,3 +120,44 @@
         transform: rotate(0deg);
     }
 }
+
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: spaceMovingRight;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: spaceMovingLeft;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes spaceMovingRight {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(110px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes spaceMovingLeft {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-90px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
